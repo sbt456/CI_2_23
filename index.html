@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head xmlns:yh="http://www.thymeLeaf.org">
+	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<title>Subscriber List</title>
+
+	
+
+	</head>
+	<body>
+	<div style=" color:navy">
+	<div style="background-color:blue;color:white;padding:20px;">
+	<h1>Welcome to my site!</h1>
+	</div>
+	<h3>Subscribe to our list. Sign Up below!</h3>
+	 <img src="https://i.pinimg.com/originals/a9/36/65/a936654ad23e5161992368c35a3b826a.gif" alt="2I&B" style="width:350px;">
+	
+<p>Please use the form below to sign up as a subscriber:</p>
+ <form action="#" th:action="@{/}" th:object="${subscriber}" method="post">
+    <table>
+	<tr>
+            <td>First Name:</td>
+	    <td><input type="text" th:field="*{firstName}" /></td>
+	</tr>
+	<tr>
+	    <td>Last Name:</td>
+	    <td><input type="text" th:field="*{lastName}" /></td>
+	</tr>
+	<tr>
+    	    <td>Username:</td>
+	    <td><input type="text" th:field="*{userName}" /></td>
+	</tr>
+	<tr>
+	
+	    <td><button type="submit">Submit Your Name</button></td>
+	</tr>
+    </table>
+</form>
+	
+	</body>
+
+
+
+</html>
